@@ -1,0 +1,37 @@
+body{
+    background-color: $light-gray;
+}
+
+.card{
+    &__container{
+        width: 26rem;
+        height: 40rem;
+        margin: auto;
+        transform: translateY(25%);
+        @include content-position;
+        gap: 1.5rem;
+        padding: 1rem .8rem 1.5rem .8rem;
+        border-radius: 2rem;
+        background-color: $white;
+    }
+
+    &__image{
+        width: 25rem;
+        border-radius: 1rem;
+    }
+
+    &__description{
+        width: $paragraph-width;
+        @include content-position;
+        color: $grayish-blue;
+        font-size: 1.3rem;
+    }
+
+    &__heading{
+        width: $paragraph-width;
+        @include content-position;
+        color: $dark-blue;
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+}
